@@ -37,7 +37,7 @@ def make_graph():
 def reset_boxes():
     start_date_entry.delete(0, 'end')
     end_date_entry.delete(0, 'end')
-    #make_graph[symbol_set] = ttk.Entry(graph, width=20)
+    symbol_set.delete(0, 'end')
 
 
 # Create main window
@@ -69,7 +69,7 @@ start_button.grid(row=3, column=0, columnspan=2, padx=20, pady=20)
 
 start_button2 = ttk.Button(graph, text="RESET", command=reset_boxes)
 
-start_button2.grid(row=3, column=1, columnspan=2, padx=5, pady=20)
+start_button2.grid(row=3, column=1, padx=5, pady=20)
 
 # Start the Tkinter event loop
 graph.mainloop()
