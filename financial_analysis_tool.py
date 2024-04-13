@@ -15,7 +15,7 @@ def make_graph():
     data = yf.download(symbol, start=start_date, end=end_date)
 
     # Visualize data
-    plot.figure(figsize=(10, 6))
+    plot.figure(figsize=(12, 6))
     sns.lineplot(x=data.index, y=data['Close'])
     if symbol == "GOOGL":
         plot.title(f'Stock Prices for GOOGLE')
