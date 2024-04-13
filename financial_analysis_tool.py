@@ -67,9 +67,9 @@ start_button = ttk.Button(graph, text="TEST BUTTON", command=make_graph)
 
 start_button.grid(row=3, column=0, columnspan=2, padx=20, pady=20)
 
-start_button2 = ttk.Button(graph, text="RESET", command=reset_boxes)
+reset_button = ttk.Button(graph, text="TEST RESET", command=reset_boxes)
 
-start_button2.grid(row=3, column=1, padx=5, pady=20)
+reset_button.grid(row=3, column=1, padx=5, pady=20)
 
 # Start the Tkinter event loop
 graph.mainloop()
